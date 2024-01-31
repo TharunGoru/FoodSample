@@ -1,0 +1,31 @@
+*{
+    margin: 0px;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* nav-bar section */
+.logo {
+    width: 150px;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 100px;
+    
+}
+
+.list-items {
+    display: flex;
+    font-size: 18px;
+    font-weight: 700;
+    list-style: none;
+    color: #00000079;
+}
+
+.list-items li{
+    margin-left: 90px;
+}
