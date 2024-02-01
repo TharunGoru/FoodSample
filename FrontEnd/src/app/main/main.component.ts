@@ -7,13 +7,8 @@ import { HomeComponent } from '../home/home.component';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent{
-
-
-  updateCart(myNums:number[]){
-    let count =0
-    myNums.forEach( num => {
-      count += num;
-    })
-
+  count:number=0;
+  getvalue(value: number) {
+    this.count=value
   }
 }

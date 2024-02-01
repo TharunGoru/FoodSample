@@ -41,9 +41,9 @@ export class HomeComponent implements OnInit{
     searchCriteria.searchFoodItem = this.searchFoodItemsForm.get('searchFoodItem')?.value || '';
     this.foodOrderService.getFoodItems(searchCriteria).subscribe({
       next: (response) => {
-        this.data=response
-        this.arr=this.data.meals
-        this.setValue=Array(this.arr.length).fill(0)
+        this.data = response;
+        this.arr = this.data.meals;
+        this.setValue = Array(this.arr.length).fill(0);
       }
     })
   }
@@ -60,7 +60,11 @@ export class HomeComponent implements OnInit{
   }
 
   senddataTomain(){
-    this.mainComponent.updateCart(this.setValue);
+    let count =0;
+    this.setValue.forEach( num => {
+      count += num;
+    })
+    this.mainComponent.getvalue(count);
   }
 
 

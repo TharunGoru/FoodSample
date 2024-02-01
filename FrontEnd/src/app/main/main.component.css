@@ -20,8 +20,6 @@
 
 .list-items {
     display: flex;
-    font-size: 18px;
-    font-weight: 700;
     list-style: none;
     color: #00000079;
 }
